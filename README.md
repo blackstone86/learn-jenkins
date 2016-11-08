@@ -1,4 +1,4 @@
-# [![][ButlerImage]] jenkins使用
+# [![][ButlerImage]][website] jenkins使用总结
 
 ## 安装
 - [下载最新package](http://mirrors.jenkins.io/osx/latest)
@@ -38,5 +38,7 @@
   - 输入`初始密码`
   - 选择安装官方推荐插件
   - 创建第一个jenkins账户，即可进入jenkins界面
-  
 
+
+[ButlerImage]: https://jenkins.io/sites/default/files/jenkins_logo.png
+[website]: https://jenkins.io/
