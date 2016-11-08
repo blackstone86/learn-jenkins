@@ -1,11 +1,11 @@
-# jenkins使用 
+# [![][ButlerImage]] jenkins使用
 
 ## 安装
 - [下载最新package](http://mirrors.jenkins.io/osx/latest)
 - 点击安装jenkins-x.xx.pkg
 
 ## 创建Jenkins用户
-- 设置Jenkins用户为**管理员**
+ 设置Jenkins用户为**管理员**
  ```shell
   sudo dseditgroup -o edit -a jenkins -t user admin
  ```
