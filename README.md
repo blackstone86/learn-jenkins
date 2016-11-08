@@ -1,16 +1,18 @@
-# [![][ButlerImage]][website] jenkins使用总结
+[![][ButlerImage]][website]
+
+# jenkins使用总结
 
 ## 安装
 - [下载最新package](http://mirrors.jenkins.io/osx/latest)
 - 点击安装jenkins-x.xx.pkg
 
 ## 创建Jenkins用户
- 设置Jenkins用户为**管理员**
+ - 设置Jenkins用户为**管理员**
  ```shell
   sudo dseditgroup -o edit -a jenkins -t user admin
  ```
 
-## 添加Jenkins用户到**开发组**
+ - 添加Jenkins用户到**开发组**
  ```shell
   sudo dscl . append /Groups/_developer GroupMembership jenkins
  ```
