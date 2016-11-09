@@ -39,8 +39,10 @@
   - 打开 http://localhost:8080
   - 输入`初始密码`
   - 选择安装官方推荐插件
+    ![][CustomizeJenkinsImgage]
   - 创建第一个jenkins账户，即可进入jenkins界面
 
 
 [ButlerImage]: https://jenkins.io/sites/default/files/jenkins_logo.png
+[CustomizeJenkinsImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/customize_jenkins.png
 [website]: https://jenkins.io/
