@@ -3,10 +3,13 @@
 ## 步骤
 - 打开终端
 - 获取GitHub邮箱地址
+
    ```shell
    git config --global user.email
    ```
+
    如果没有，就设置一个
+   
    ```shell
    git config --global user.email "jimvin@qq.com"
    ```
