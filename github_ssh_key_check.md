@@ -3,7 +3,7 @@
 ## 步骤
 - 打开终端
 - 输入`ls -al ~/.ssh` 检查是否存在**ssh钥匙**
-  ![][CustomizeJenkinsImgage]
+  ![][CheckSshKeyImage]
 - 通过目录列表检查是否已经存在ssh钥匙
   - ssh钥匙的文件名通常为以下其中一种
     - id_dsa.pub
