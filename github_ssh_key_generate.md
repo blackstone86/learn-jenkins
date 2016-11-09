@@ -13,10 +13,12 @@
    ```shell
    git config --global user.email "jimvin@hudongpai.com"
    ```
-- 输入以下命令，并用你的GitHub邮箱地址代替
+- 输入以下命令，并用你的GitHub邮箱地址代替（表示用邮箱地址作为钥匙的标签）
+
    ```shell
     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    ```
+   
    ![][GenerateSshKeyImage]
 - 当提示`Enter file in which to save the key`，点击回车，将钥匙保存在默认路径
    ![][SaveSshKeyImage]
