@@ -42,6 +42,10 @@
     ![][CustomizeJenkinsImgage]
   - 创建第一个jenkins账户，即可进入jenkins界面
 
+## 参考资源
+  - GitHub SSH相关
+    - [检查已有的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_check.md)
+    - [生成一个新的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_generate.md)
 
 [ButlerImage]: https://jenkins.io/sites/default/files/jenkins_logo.png
 [CustomizeJenkinsImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/customize_jenkins.png
