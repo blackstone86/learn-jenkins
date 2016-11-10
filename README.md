@@ -28,6 +28,7 @@
   - 更改**Jenkins**用户密码
 
     ![][SetJenkinsPwdImgage]
+    
 ## 用**Jenkins**用户登陆
   - 注销当前系统账户
   - 选择**Jenkins**用户登陆（我们之前创建的Jenkins用户）
