@@ -18,7 +18,9 @@
     ssh-add ~/.ssh/id_rsa
   ```
 
+  添加成功，会提示以下内容
+  ![][AddSshKeyToSshAgentImage]
+
 - [添加SSH钥匙到GitHub账户](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_add.md)
  
-
-[CheckSshKeyImage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/check_ssh_key.png
+[AddSshKeyToSshAgentImage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/add_ssh_agent.png
