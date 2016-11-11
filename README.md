@@ -86,4 +86,4 @@
 [JenkinsReadyImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jenkins_ready.png
 [JenkinsOkImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jenkins_ok.png
 [UnlockJenkinsImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/unlock_jenkins.png
-[website]: https://jenkins.io/  
+[website]: https://jenkins.io/ 
