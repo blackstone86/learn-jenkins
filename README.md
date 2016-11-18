@@ -70,7 +70,10 @@
   ```shell
   sudo '/Library/Application Support/Jenkins/Uninstall.command'
   ```
-  
+
+## 进阶
+  - [GitHub仓库push后自动触发构建](https://github.com/blackstone86/learn-jenkins/blob/master/ci_by_webhook.md)
+
 ## 参考资源
   - GitHub SSH相关
     - [检查已有的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_check.md)
@@ -86,4 +89,4 @@
 [JenkinsReadyImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jenkins_ready.png
 [JenkinsOkImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jenkins_ok.png
 [UnlockJenkinsImgage]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/unlock_jenkins.png
-[website]: https://jenkins.io/ 
+[website]: https://jenkins.io/
