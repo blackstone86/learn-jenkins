@@ -7,12 +7,12 @@
   - Plain Credentials Plugin [文档](https://wiki.jenkins-ci.org/display/JENKINS/Plain+Credentials+Plugin)
 
 - 获取GitHub服务器认证，以便调用GitHub的api
-  - 获取GitHub个人`access token`
-    - 创建access token [创建](https://github.com/settings/tokens/new)
-      
-      填写`Token description`为jenkins_access_token，选择`repo`和`admin:repo_hook`
+  - 获取GitHub个人`access token` [创建](https://github.com/settings/tokens/new)
+    - 填写创建access token的表单 
+      - 填写`Token description`为jenkins_access_token
+      - 选择`repo`和`admin:repo_hook`
 
-      ![][githubCreatePersonalAccessToken]
+        ![][githubCreatePersonalAccessToken]
     
     - 点击`Generate token`按钮
 
