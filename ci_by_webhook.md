@@ -6,29 +6,30 @@
   - GitHub Plugin [文档](https://wiki.jenkins-ci.org/display/JENKINS/GitHub+Plugin)
   - Plain Credentials Plugin [文档](https://wiki.jenkins-ci.org/display/JENKINS/Plain+Credentials+Plugin)
 
-- 获取GitHub服务器认证，以便调用GitHub的api
-  - 获取GitHub个人`access token` [创建](https://github.com/settings/tokens/new)
-    - 填写创建access token的表单 
-      - 填写`Token description`为jenkins_access_token
-      - 选择`repo`和`admin:repo_hook`
+- 获取GitHub个人`access token` [创建GitHub access token](https://github.com/settings/tokens/new)
+  - 填写创建access token的表单 
+    - 填写`Token description`为jenkins_access_token
+    - 选择`repo`和`admin:repo_hook`
 
-        ![][githubCreatePersonalAccessToken]
-    
-    - 点击`Generate token`按钮
+      ![][githubCreatePersonalAccessToken]
 
-      ![][clickGenerateTokenBtn]
+  - 点击`Generate token`按钮
+
+    ![][clickGenerateTokenBtn]
+
+  - 成功创建后，复制`access token`
     
-    - 成功创建后，复制`access token`
-      
-      ![][githubCreatePersonalAccessTokenSuccess]
-   
-  - 在jenkins的系统配置页设置GitHub插件
-    - 添加jenkins的GitHub认证
+    ![][githubCreatePersonalAccessTokenSuccess]
+  
+- 在jenkins的系统配置页设置GitHub插件
+    - 添加jenkins的GitHub认证，以便调用GitHub的api
 
       ![][addGithubServerCredentials]
 
     - `Kind`选择`Secret text`
-       
+      
+      > 由于之前我们安装了`Plain Credentials Plugin`插件，所以会多了一个`Secret text`选项
+
       ![][selectSecretTextKind]
 
     - `Secret`填写刚才复制的GitHub`access token`
