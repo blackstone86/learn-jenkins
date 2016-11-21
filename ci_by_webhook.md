@@ -45,6 +45,70 @@
       ![][checkCredentials]
 
       > 如成功，显示`Credentials verified for user blackstone86, rate limit: 4997`类似信息
+  
+  - 将本地jenkins服务发布到公网
+    - 下载`ngrok`
+      ![][downloadNgrok]
+
+    - 解压到系统账户下
+      ![][unzipToJimvin]
+
+    - 打开终端，输入以下代码
+
+      ```shell
+      $ ./ngrok http 8080
+      ```
+
+      ![][runNgrok]
+
+    - 成功发布后，会显示jenkins的公网地址
+      
+      ![][createLocalhostDomain]
+      
+  - github仓库创建一个服务
+    - 创建一个服务
+      ![][addGithubService]
+
+    - 选择`GitHub plugin`
+      ![][selectJenkinsGithubPlugin]
+
+    - 设置`Jenkins hook url`，将之前发布的jenkins公网地址加上`/github-webhook/`
+      ![][setGithubHookUrl]
+
+    - 点击`Edit`按钮
+      ![][editJenkinsPlugin]
+    
+    - 点击`Test Service`
+      ![][testService]
+
+      ![][successTestService]
+
+
+
+
+  - 新建一个作业
+    - 点击**新建**按钮
+
+      ![][newProj]
+
+    - 填写作业名为`jimvin-app`，并选择`构建一个自由风格的软件项目`
+
+      ![][createJimvinAappJob]
+
+    - 复制github仓库链接
+      
+      ![][copyGithubRepoLink]
+
+      > 如果此时你保存作业配置，你会看到作业的左则菜单栏多了一个`GitHub`项目
+
+      ![][successConfigGithubProj]
+
+    - 配置作业Git配置，填写github仓库url
+      
+      ![][configGit]
+
+    - 保存配置 
+
 
 [githubCreatePersonalAccessToken]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token.png
 [clickGenerateTokenBtn]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/click_generate_token_btn.png
@@ -54,3 +118,22 @@
 [setCredentialsSecret]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_credentials_secret.png
 [selectSecretText]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/select_secret_text.png
 [checkCredentials]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/check_credentials.png
+[newProj]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/new_proj.png
+[createJimvinAappJob]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/create_jimvin_app_job.png
+[copyGithubRepoLink]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/copy_github_repo_link.png
+[configGithubProj]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_github_proj.png
+[successConfigGithubProj]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_config_github_proj.png
+[configGit]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git.png
+
+[downloadNgrok]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/download_ngrok.png
+[unzipToJimvin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/unzip_to_jimvin.png
+[runNgrok]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/run_ngrok.png
+[createLocalhostDomain]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/create_localhost_domain.png
+
+[addGithubService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/add_github_service.png
+[selectJenkinsGithubPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/select_jenkins_github_plugin.png
+[setGithubHookUrl]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_github_hook_url.png
+[editJenkinsPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/edit_jenkins_plugin.png
+[testService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/test_service.png
+[successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
+
