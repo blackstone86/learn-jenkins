@@ -76,7 +76,7 @@
 
       ![][selectJenkinsGithubPlugin]
 
-    - 设置`Jenkins hook url`，将刚才发布的jenkins公网地址追加`/github-webhook/`字符串
+    - 设置`Jenkins hook url`，将刚才发布的jenkins公网地址追加`/github-webhook/`字符串，并点击`Add Service`按钮
 
       ![][setGithubHookUrl]
 
@@ -105,6 +105,10 @@
       
       ![][copyGithubRepoLink]
 
+    - 设置作业的`GitHub project`配置
+     
+      ![][configGithubProj]
+
       > 如果此时你保存作业配置，你会看到作业的左则菜单栏多了一个`GitHub`项目，点击会直接跳转到你github仓库界面
 
       ![][successConfigGithubProj]
@@ -113,7 +117,7 @@
       
       ![][configGit]
 
-    - 保存配置 
+    - 保存配置
 
 
 [githubCreatePersonalAccessToken]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token.png
