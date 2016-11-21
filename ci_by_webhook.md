@@ -84,7 +84,7 @@
 
       ![][editJenkinsPlugin]
     
-    - 点击`Test Service`
+    - 点击`Test Service`按钮
 
       ![][testService]
     
@@ -105,7 +105,7 @@
       
       ![][copyGithubRepoLink]
 
-    - 设置作业的`GitHub project`配置
+    - 设置作业的`GitHub project`配置，将刚才复制的github仓库链接黏贴到`Project url`
      
       ![][configGithubProj]
 
