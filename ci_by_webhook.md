@@ -68,7 +68,7 @@
       ![][createLocalhostDomain]
       
   - github仓库创建一个服务
-    - 创建一个服务
+    - 点击`Add Service`按钮创建服务
 
       ![][addGithubService]
 
@@ -76,7 +76,7 @@
 
       ![][selectJenkinsGithubPlugin]
 
-    - 设置`Jenkins hook url`，将之前发布的jenkins公网地址加上`/github-webhook/`
+    - 设置`Jenkins hook url`，将刚才发布的jenkins公网地址追加`/github-webhook/`字符串
 
       ![][setGithubHookUrl]
 
@@ -105,11 +105,11 @@
       
       ![][copyGithubRepoLink]
 
-      > 如果此时你保存作业配置，你会看到作业的左则菜单栏多了一个`GitHub`项目
+      > 如果此时你保存作业配置，你会看到作业的左则菜单栏多了一个`GitHub`项目，点击会直接跳转到你github仓库界面
 
       ![][successConfigGithubProj]
 
-    - 配置作业Git配置，填写github仓库url
+    - 设置作业的Git配置，填写github仓库url
       
       ![][configGit]
 
