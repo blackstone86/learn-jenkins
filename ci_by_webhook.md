@@ -97,7 +97,7 @@
 
       ![][newProj]
 
-    - 填写作业名为`jimvin-app`，并选择`构建一个自由风格的软件项目`，点击`ok`按钮进入下一步
+    - 填写作业名为`jimvin-app`，并选择`构建一个自由风格的软件项目`选项，点击`ok`按钮进入下一步
 
       ![][createJimvinAappJob]
 
