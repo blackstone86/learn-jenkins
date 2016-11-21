@@ -47,10 +47,12 @@
       > 如成功，显示`Credentials verified for user blackstone86, rate limit: 4997`类似信息
   
   - 将本地jenkins服务发布到公网
-    - 下载`ngrok`
+    - [下载](https://ngrok.com/download)`ngrok`
+
       ![][downloadNgrok]
 
-    - 解压到系统账户下
+    - 解压到操作系统账户下
+
       ![][unzipToJimvin]
 
     - 打开终端，输入以下代码
@@ -67,24 +69,28 @@
       
   - github仓库创建一个服务
     - 创建一个服务
+
       ![][addGithubService]
 
     - 选择`GitHub plugin`
+
       ![][selectJenkinsGithubPlugin]
 
     - 设置`Jenkins hook url`，将之前发布的jenkins公网地址加上`/github-webhook/`
+
       ![][setGithubHookUrl]
 
     - 点击`Edit`按钮
+
       ![][editJenkinsPlugin]
     
     - 点击`Test Service`
+
       ![][testService]
+    
+    - 服务正常会显示如下结果
 
       ![][successTestService]
-
-
-
 
   - 新建一个作业
     - 点击**新建**按钮
