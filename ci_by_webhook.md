@@ -72,7 +72,7 @@
 
       ![][addGithubService]
 
-    - 选择`GitHub plugin`
+    - 选择`GitHub plugin`选项
 
       ![][selectJenkinsGithubPlugin]
 
@@ -97,7 +97,7 @@
 
       ![][newProj]
 
-    - 填写作业名为`jimvin-app`，并选择`构建一个自由风格的软件项目`
+    - 填写作业名为`jimvin-app`，并选择`构建一个自由风格的软件项目`，点击`ok`按钮进入下一步
 
       ![][createJimvinAappJob]
 
@@ -117,8 +117,10 @@
       
       ![][configGit]
 
-    - 保存配置
+    - 保存作业配置
 
+      ![][saveJobConfig]
+      
 
 [githubCreatePersonalAccessToken]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token.png
 [clickGenerateTokenBtn]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/click_generate_token_btn.png
@@ -146,4 +148,7 @@
 [editJenkinsPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/edit_jenkins_plugin.png
 [testService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/test_service.png
 [successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
+[successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
+[saveJobConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/save_job_config.png
+
 
