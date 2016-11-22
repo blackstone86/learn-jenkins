@@ -146,7 +146,7 @@
 
       ![][lookChanglog]
 
-      > 提示：`16513df84dc55f7d7643146deec58ec8f9b50acc`、`ci_by_webhook.md`、`diff`都可以直接跳转到github对应的界面，`blackstone86`会代码变更的提交者，点击显示其git的邮箱地址
+      > 提示：`16513df84dc55f7d7643146deec58ec8f9b50acc`、`ci_by_webhook.md`、`diff`都会直接跳转到github对应的界面，`blackstone86`是代码变更的提交者，点击显示其git的邮箱地址
 
 [githubCreatePersonalAccessToken]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token.png
 [clickGenerateTokenBtn]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/click_generate_token_btn.png
