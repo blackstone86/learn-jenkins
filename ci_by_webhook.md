@@ -151,6 +151,6 @@
 [testService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/test_service.png
 [successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
 [successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
-[saveJobConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/save_job_config.png 
+[saveJobConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/save_job_config.png
 
 
