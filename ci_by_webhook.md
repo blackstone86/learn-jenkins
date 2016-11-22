@@ -148,6 +148,9 @@
 
       > 提示：`16513df84dc55f7d7643146deec58ec8f9b50acc`、`ci_by_webhook.md`、`diff`都会直接跳转到github对应的界面，`blackstone86`是代码变更的提交者，点击显示其git的邮箱地址
 
+## 总结
+   到此为止，我们介绍了在jenkins中如何创建一个作业，如何通过github的push事件通知jenkins自动触发作业的构建，但是并没有设置构建和构建后的操作，接下来将讲解如何书写构建脚本，以及如何设置构建后的操作
+
 [githubCreatePersonalAccessToken]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token.png
 [clickGenerateTokenBtn]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/click_generate_token_btn.png
 [githubCreatePersonalAccessTokenSuccess]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token_success.png
