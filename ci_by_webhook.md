@@ -122,7 +122,31 @@
     - 保存作业配置
 
       ![][saveJobConfig]
-      
+
+  - push代码变更到`https://github.com/blackstone86/learn-jenkins.git`仓库，并查看jenkins运行状况
+    - 作业被自动触发构建
+
+      ![][autoCi]
+    
+    - 作业构建后，点击作业号链接，进入作业详细页
+
+      ![][lookupJob]
+    
+    - 默认显示`状态集`
+
+      > 提示：下图中的`Started by GitHub push by blackstone86`说明本次构建是由blackstone86推送代码变更到github而触发的
+
+      ![][lookupStatus]
+    
+    - 查看`Console Output`控制台输出
+
+      ![][lookupConsole]
+   
+    - 查看`变更记录`
+
+      ![][lookChanglog]
+
+      > 提示：`16513df84dc55f7d7643146deec58ec8f9b50acc`、`ci_by_webhook.md`、`diff`都可以直接跳转到github对应的界面，`blackstone86`会代码变更的提交者，点击显示其git的邮箱地址
 
 [githubCreatePersonalAccessToken]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/github_create_personal_access_token.png
 [clickGenerateTokenBtn]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/click_generate_token_btn.png
@@ -151,6 +175,12 @@
 [testService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/test_service.png
 [successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
 [successTestService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_test_service.png
-[saveJobConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/save_job_config.png 
+[saveJobConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/save_job_config.png
+
+[autoCi]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/auto_ci.png 
+[lookupJob]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/lookup_job.png 
+[lookupStatus]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/lookup_status.png 
+[lookupConsole]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/lookup_console.png 
+[lookChanglog]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/look_changlog.png
 
 
