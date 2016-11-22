@@ -109,7 +109,9 @@
      
       ![][configGithubProj]
 
-      > 如果此时你保存作业配置，你会看到作业的左则菜单栏多了一个`GitHub`项目，点击会直接跳转到你github仓库界面
+      > 提示：实际上`http://github.com/blackstone86/learn-jenkins.git`也是可以的，注意不要用`git@github.com:blackstone86/learn-jenkins.git`
+      
+      如果此时你保存作业配置，你会看到作业的左则菜单栏多了一个`GitHub`项目，点击会直接跳转到你github仓库界面
 
       ![][successConfigGithubProj]
 
