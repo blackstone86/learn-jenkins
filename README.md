@@ -73,6 +73,7 @@
 
 ## 进阶
   - [GitHub仓库push后自动触发构建](https://github.com/blackstone86/learn-jenkins/blob/master/ci_by_webhook.md)
+  - [邮件通知](https://github.com/blackstone86/learn-jenkins/blob/master/mail_notification.md)
 
 ## 参考资源
   - GitHub SSH相关
