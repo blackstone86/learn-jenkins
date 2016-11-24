@@ -15,29 +15,28 @@
   
   ![][emailTest]
 
-  > - 如果测试通过，显示如下
+  如果测试通过，显示如下
     
-      ![][successEmailTest]
+  ![][successEmailTest]
 
-      去自己的Gmail查看jenkins发过来的测试邮件
-    
-      ![][checkEmail]
+  去自己的Gmail查看jenkins发过来的测试邮件
 
-      邮件内容
+  ![][checkEmail]
 
-      ![][checkEmailDetail]
+  邮件内容
 
-    - 如果测试不通过，出现`javax.mail.AuthenticationFailedException`异常
+  ![][checkEmailDetail]
+
+  如果测试**不通过**，出现`javax.mail.AuthenticationFailedException`异常
       
-      ![][errorEmailTest]
+  ![][errorEmailTest]
 
-      去[设置](https://www.google.com/settings/security/lesssecureapps)Google账号访问权限，选择`启用`
+  去[设置](https://www.google.com/settings/security/lesssecureapps)Google账号访问权限，选择`启用`
 
-      editGoogleAccess
+  editGoogleAccess
 
-      > 提示：出现`javax.mail.AuthenticationFailedException`异常是因为Google认为jenkins是不够安全的应用，此处选择`启用`的目的是让jenkins具备
-        访问Google账号的权限，包括Gmail
-      
+  > 提示：出现`javax.mail.AuthenticationFailedException`异常是因为Google认为jenkins是不够安全的应用，此处选择`启用`的目的是让jenkins具备
+    访问Google账号的权限，包括Gmail  
 
 [emailBase]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/email_base.png
 [emailAdvance]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/email_advance.png
