@@ -66,6 +66,12 @@
     - 成功发布后，会显示jenkins的公网地址
       
       ![][createLocalhostDomain]
+
+  - 设置一下`Jenkins Location`(jenkins系统配置页)
+
+    ![][jenkinsLocation]
+
+    > 这个配置在邮件插件中会被使用到，让我们可以直接在jenkins发出的邮件中点击链接跳回去jenkins页面
       
   - github仓库创建一个服务
     - 点击`Add Service`按钮创建服务
@@ -170,6 +176,8 @@
 [unzipToJimvin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/unzip_to_jimvin.png
 [runNgrok]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/run_ngrok.png
 [createLocalhostDomain]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/create_localhost_domain.png
+
+[jenkinsLocation]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jenkins_location.png
 
 [addGithubService]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/add_github_service.png
 [selectJenkinsGithubPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/select_jenkins_github_plugin.png
