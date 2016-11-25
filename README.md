@@ -16,6 +16,10 @@
     - [生成一个新的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_generate.md)
     - [添加SSH钥匙到ssh-agent](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_to_sshagent.md)
     - [添加SSH钥匙到GitHub账户](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_add.md)
-   
+
+## License
+
+MIT
+
 [ButlerImage]: https://jenkins.io/sites/default/files/jenkins_logo.png
 [website]: https://jenkins.io/
