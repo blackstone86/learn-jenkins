@@ -18,18 +18,24 @@
 
    以上三次提交后，jenkins会检测`blackstone86`、`jimvin86`、`asianking86`三个用户是否已经存在同名的用户，如果存在，则忽略，不会覆盖原有的同名用户，如果不存在则创建新的，由于我之前并没有这三个同名用户，所以你会在jenkins用户列表发现新增了三个用户，如下：
 
-   > 只要让jenkins与github建立联系，提交代码变更会自动触发jenkins构建，此时jenkins会按需动态创建用户，但新创建的jenkins用户名称来源不可预估，`blackstone86`、`asianking86`这两个jenkins用户的名称都来源于git提交人名称，但`jimvin86`却是来源于邮箱地址的前缀（它的git提交人为`blackstone888`）
-
    ![][jenkinsUsers]
 
-   一旦出现构建失败，jenkins将会发送给以下用户
+   > 提示：只要让jenkins与github建立联系，提交代码变更会自动触发jenkins构建，此时jenkins会在没有同名用户情况下动态创建新用户，但这些新的用户的`用户标识`、`名称`来源没有规律可循
+   
+  |git作者|git邮箱|用户标识来源|名称来源|
+  |---|:---|:---:|---:|
+  |blackstone86|jimvin@hudongpai.com|git邮箱|git作者|
+  |blackstone888|jimvin86@gmail.com|git邮箱前缀|git邮箱前缀|
+  |asianking86|asianking86@qq.com|git作者或git邮箱前缀|git作者或git邮箱前缀|   
+
+   一旦出现构建失败，jenkins将会发送构建失败邮件通知到以下邮箱地址
 
    `Recipients` 指定的邮箱地址列表
    - blackstone8866 <blackstone8866@gmail.com>
 
    责任人邮箱地址列表
-   - jimvin86 <jimvin86@gmail.com>
    - Jimvin <jimvin@hudongpai.com>
+   - jimvin86 <jimvin86@gmail.com>
    - Asianking86 <asianking86@qq.com>
 
    在QQ邮箱查看jenkins发过来的构建失败通知邮件
