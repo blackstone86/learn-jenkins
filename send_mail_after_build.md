@@ -44,10 +44,23 @@
 
    如果不勾选`单独发送邮件给对构建造成不良影响的责任人`，则只会发送到`Recipients` 指定的邮箱地址列表
 
+- 邮件的发送时机
+  - 构建失败`Failed`时候
+  - 构建从失败`Failed`变成非稳定状态`Unstable`
+    
+    > 提示：非稳定状态指构建操作成功，但构建后的操作存在失败的情况
+   
+    ![][becomeToNormal]
 
+  - 构建从非稳定状态`Unstable`变成成功状态`Success`
+
+    ![][normalToStable]
+    
 [emailSetting]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/email_setting.png
 [asianking86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/asianking86_user.png
 [jimvin86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jimvin86_user.png
 [blackstone86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/blackstone86_user.png
 [jenkinsUsers]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jenkins_users.png
 [sendMailCount]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/send_mail_count.png
+[becomeToNormal]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/become_to_normal.png
+[normalToStable]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/normal_to_stable.png
