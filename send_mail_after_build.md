@@ -41,8 +41,11 @@
    在QQ邮箱查看jenkins发过来的构建失败通知邮件
 
    ![][sendMailCount]
+   
+   为什么责任人有三个呢？
+   > 答：是因为他们最早一次触发失败构建以来，还没有一次是恢复到非稳定状态`Unstable`或成功状态`Success`，所以在遇到构建失败时，会给他们都发送邮件通知
 
-   如果不勾选`单独发送邮件给对构建造成不良影响的责任人`，则只会发送到`Recipients` 指定的邮箱地址列表
+   如果不勾选`单独发送邮件给对构建造成不良影响的责任人`，则只会发送到`Recipients`指定的邮箱地址列表，一般`Recipients`指定的是技术团队老大、测试人员的邮箱地址
 
 - 邮件的发送时机
   - 构建失败`Failed`时候
@@ -76,8 +79,6 @@
 - 不发送邮件情况
   - 当出现构建失败后，一旦出现连续两次成功状态`Success`，则第二次成功构建后就不再发送邮件通知了，后续的构建只要不失败，都不会发邮件
   - 从成功状态`Success`变成非稳定状态`Unstable`，不会发邮件
-  
-
 
 [emailSetting]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/email_setting.png
 [asianking86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/asianking86_user.png
