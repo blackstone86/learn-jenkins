@@ -46,16 +46,39 @@
 
 - 邮件的发送时机
   - 构建失败`Failed`时候
-  - 构建从失败`Failed`变成非稳定状态`Unstable`
     
-    > 提示：非稳定状态指构建操作成功，但构建后的操作存在失败的情况
+    >提示：邮件标题类似`Build failed in Jenkins: jimvin-app #57`
+
+  - 构建从失败`Failed`变成非稳定状态`Unstable`时
+    
+    或
+
+    构建从失败`Failed`变成非稳定状态`Success`时
    
     ![][becomeToNormal]
 
-  - 构建从非稳定状态`Unstable`变成成功状态`Success`
+    >提示：邮件标题类似`Jenkins build is back to normal : jimvin-app #60`
+
+  - 构建从失败`Failed`->非稳定状态`Unstable`->成功状态`Success`时
+
+    或
+
+    构建从失败`Failed`->非稳定状态`Unstable`->非稳定状态`Unstable`时
+
+    或
+
+    构建从失败`Failed`->非稳定状态`Unstable`->非稳定状态`Unstable`->成功状态`Success`时
 
     ![][normalToStable]
-    
+
+    >提示：邮件标题类似`Jenkins build is back to stable : jimvin-app #61`
+
+- 不发送邮件情况
+  - 当出现构建失败后，一旦出现连续两次成功状态`Success`，则第二次成功构建后就不再发送邮件通知了，后续的构建只要不失败，都不会发邮件
+  - 从成功状态`Success`变成非稳定状态`Unstable`，不会发邮件
+  
+
+
 [emailSetting]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/email_setting.png
 [asianking86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/asianking86_user.png
 [jimvin86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jimvin86_user.png
