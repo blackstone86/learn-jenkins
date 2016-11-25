@@ -4,21 +4,21 @@
 - 安装插件 
   - Mailer [文档](https://wiki.jenkins-ci.org/display/JENKINS/Mailer)
 
-- 配置构建后发邮件
+- 设置构建后发送邮件通知
 
   ![][emailSetting]
 
-  `单独发送邮件给对构建造成不良影响的责任人`中的“责任人”的邮件，jenkins是怎样收集的：
-     
-   从Git提交信息中的邮箱地址配置获取
+  `单独发送邮件给对构建造成不良影响的责任人`中的“责任人”的邮件，jenkins是从Git提交信息中的邮箱地址收集起来的
+   
+   ![][blackstone86User]
 
    ![][asianking86User]
 
    ![][jimvin86User]
 
-   ![][blackstone86User]
+   以上三次提交后，jenkins会检测`asianking86`、`jimvin86`、`blackstone86`三个用户是否已经存在同名的用户，如果存在，则忽略，不会覆盖原有的同名用户，如果不存在则创建新的，由于我之前并没有这三个同名用户，所以你会在jenkins用户列表发现新增了三个用户，如下：
 
-   以上两次提交后，jenkins会检测`asianking86`、`jimvin86`、`jimvin`三个用户是否已经存在同名的用户，如果存在，则忽略，不会覆盖原有的同名用户，如果不存在则创建新的，由于我之前并没有这三个同名用户，所以你会在jenkins用户列表发现新增了三个用户，如下：
+   > jenkins责任人的名称来源不可预估，`asianking86`、`blackstone86`这两个jenkins用户的名称都来源于git提交人名称，但`jimvin86`却是来源于邮箱地址的前缀（它的git提交人为`blackstone888`）
 
    ![][jenkinsUsers]
 
