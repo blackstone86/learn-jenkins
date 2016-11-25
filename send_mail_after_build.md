@@ -12,9 +12,9 @@
    
    ![][blackstone86User]
 
-   ![][asianking86User]
-
    ![][jimvin86User]
+
+   ![][asianking86User]
 
    以上三次提交后，jenkins会检测`asianking86`、`jimvin86`、`blackstone86`三个用户是否已经存在同名的用户，如果存在，则忽略，不会覆盖原有的同名用户，如果不存在则创建新的，由于我之前并没有这三个同名用户，所以你会在jenkins用户列表发现新增了三个用户，如下：
 
