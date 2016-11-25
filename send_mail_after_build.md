@@ -42,6 +42,9 @@
 
    ![][sendMailCount]
 
+   如果不勾选`单独发送邮件给对构建造成不良影响的责任人`，则只会发送到`Recipients` 指定的邮箱地址列表
+
+
 [emailSetting]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/email_setting.png
 [asianking86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/asianking86_user.png
 [jimvin86User]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jimvin86_user.png
