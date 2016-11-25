@@ -2,7 +2,7 @@
 
 # jenkins微教程
 
-## 基础
+## 入门
   - [搭建jenkins环境](https://github.com/blackstone86/learn-jenkins/blob/master/install_jenkins.md)
 
 ## 进阶
@@ -10,7 +10,7 @@
   - [邮件通知（以Gmail为例）](https://github.com/blackstone86/learn-jenkins/blob/master/mail_notification.md)
   - [构建后操作之发送邮件](https://github.com/blackstone86/learn-jenkins/blob/master/send_mail_after_build.md)
 
-## 参考资源
+## 知识准备
   - GitHub SSH相关
     - [检查已有的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_check.md)
     - [生成一个新的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_generate.md)
