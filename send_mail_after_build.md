@@ -18,7 +18,7 @@
 
    以上三次提交后，jenkins会检测`blackstone86`、`jimvin86`、`asianking86`三个用户是否已经存在同名的用户，如果存在，则忽略，不会覆盖原有的同名用户，如果不存在则创建新的，由于我之前并没有这三个同名用户，所以你会在jenkins用户列表发现新增了三个用户，如下：
 
-   > jenkins责任人的名称来源不可预估，`blackstone86`、`asianking86`这两个jenkins用户的名称都来源于git提交人名称，但`jimvin86`却是来源于邮箱地址的前缀（它的git提交人为`blackstone888`）
+   > 只要让jenkins与github建立联系，提交代码变更会自动触发jenkins构建，此时jenkins会按需动态创建用户，但新创建的jenkins用户名称来源不可预估，`blackstone86`、`asianking86`这两个jenkins用户的名称都来源于git提交人名称，但`jimvin86`却是来源于邮箱地址的前缀（它的git提交人为`blackstone888`）
 
    ![][jenkinsUsers]
 
