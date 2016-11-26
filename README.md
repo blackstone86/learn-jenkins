@@ -16,6 +16,8 @@
     - [生成一个新的SSH钥匙](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_generate.md)
     - [添加SSH钥匙到ssh-agent](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_to_sshagent.md)
     - [添加SSH钥匙到GitHub账户](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_add.md)
+  - 阿里云相关
+    - [9元开通阿里云OSS](https://github.com/blackstone86/learn-jenkins/blob/master/aliyun_create_oss.md)
 
 ## License
 
