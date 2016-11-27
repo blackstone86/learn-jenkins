@@ -41,7 +41,7 @@
 - 常用的OSS工具
   
   - `OSS控制台客户端(驻云)`
-    - 下载客户端
+    - 下载客户端并安装
       - 方法一：在控制台直接[下载安装包](http://gosspublic.alicdn.com/ossclient_v1.1.6-mac.zip?spm=5176.2020520105.113.3.r00g24&file=ossclient_v1.1.6-mac.zip)
     
         ![][downloadOssTool]
@@ -50,9 +50,25 @@
     
         ![][downloadOssTool2]
 
-    - 授权客户端
-      
+    - 回到阿里云控制台，点击`AccessKeys`按钮获取`访问阿里云API的秘匙`
+
+      ![][getSecret]
+     
+    - 对客户端授权
+
       ![][ossClientConfig]
+
+      输入刚才获取的`Access Key ID`和`Access Key Secret`，点击`登陆`按钮
+      
+      ![][accessOssClientTool]
+
+      输入安全密码，用于下次登陆客户端时输入
+
+      ![][setOssClientPwd]
+
+      成功后，进入客户端使用界面
+
+      ![][setOssClientPwd]
 
 - 阿里云OSS官方资源
   - [对象存储OSS](https://www.aliyun.com/product/oss/?spm=5176.8142029.418687.8.6BcYhs)
@@ -68,3 +84,7 @@
 [downloadOssTool]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/download_oss_tool.png
 [downloadOssTool2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/download_oss_tool_2.png
 [ossClientConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/ossclient_config.png
+[getSecret]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/get_secret.png
+[accessOssClientTool]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/access_oss_client_tool.png
+[setOssClientPwd]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_oss_client_pwd.png
+[sccessLoginOssClent]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/sccess_login_oss_clent.png
