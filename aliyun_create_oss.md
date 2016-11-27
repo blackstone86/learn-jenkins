@@ -62,13 +62,13 @@
       
       ![][accessOssClientTool]
 
-      输入安全密码，用于下次登陆客户端时输入
+      输入安全密码，用于下次登陆客户端时检验
 
       ![][setOssClientPwd]
 
       成功后，进入客户端使用界面
 
-      ![][setOssClientPwd]
+      ![][sccessLoginOssClent]
 
 - 阿里云OSS官方资源
   - [对象存储OSS](https://www.aliyun.com/product/oss/?spm=5176.8142029.418687.8.6BcYhs)
