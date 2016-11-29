@@ -6,19 +6,19 @@
 
 - 在jenkins系统配置页，设置`FTP repository hosts`，并保存
 
-  ![][selectPublishArtifactsToFtp]
+  ![][configFtpRepositoryHosts]
 
   |Profile Name|hostname|Port|TimeOut|Root Repository Path|User Name|Password|
   |:---|:---|:---|:---|:---|:---|:---|
   |Jimvin-OSS-FTP|localhost|2048|3000|/learnJenkins|Access Key ID/bucket_name（eg：LTAIsL2jO98Pr7B0/jimvin-bucket）|Access Key Secret|
    
-- 在作业配置页面，`构建后操作`中选择`Publish artifacts to FTP`项目
+- 在作业配置页面，`增加构建后操作步骤`中选择`Publish artifacts to FTP`项目
 
   ![][selectPublishArtifactsToFtp]
 
 - 设置作业的`Publish artifacts to FTP`
   
-  新增上传文件目录配置，点击`新增`按钮
+  新增上传目录配置，点击`增加`按钮
 
   ![][addUploadConfig]
   
@@ -27,7 +27,7 @@
   ![][setFileUpload]
 
   > `assets/*.png`表示仓库下的assets文件夹的所有png图片，构建后会将这些图片自动上传到OSS的`/learnJenkins/pkgs/development/latest`目录，如果勾选了`Use timestamps`
-    ，则在指定上传目录下再新建一个以时间戳命名的文件夹（类似`2016-11-29_16-19-04`），并将图片上传到该文件夹下
+    ，则在指定上传目录下再新建一个以时间戳命名的文件夹（文件名类似`2016-11-29_16-19-04`），并将图片上传到该文件夹下
 
 - 验证是否设置成功
   
