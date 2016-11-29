@@ -140,7 +140,7 @@
 [getSecret]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/get_secret.png
 [accessOssClientTool]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/access_oss_client_tool.png
 [setOssClientPwd]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_oss_client_pwd.png
-[sccessLoginOssClent]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_oss_client_pwd.png
+[sccessLoginOssClent]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/sccess_login_oss_clent.png
 [downLoadOssftp]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/down_load_ossftp.png
 [succesStartOssftp]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/succes_start_ossftp.png
 [succesStartOssftp2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/succes_start_ossftp2.png
