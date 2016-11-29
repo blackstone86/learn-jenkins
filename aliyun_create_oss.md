@@ -1,4 +1,4 @@
-# 9元开通阿里云OSS
+# 阿里云OSS开通和使用
 
 ## 步骤
 - 开通OSS
@@ -103,7 +103,7 @@
 
       ![][downloadFilezilla]
 
-      打开FileZilla客户端，输入登陆信息
+      安装并打开FileZilla客户端，输入登陆信息，点击`快速连接`按钮
 
       ![][loginOssftpByFilezilla]
 
@@ -115,7 +115,13 @@
 
       ![][successLoginOssftpByFilezilla]
 
-- 阿里云OSS官方资源
+## 总结
+   到此为止，我们简单介绍了如何开通阿里云OSS对象存储服务，并讲解了两个常用配套工具
+   - `OSS控制台客户端(驻云)`：与阿里云控制台中的OSS操作相比，会更加灵活方便
+   - `ossftp`：让我们可以用FTP的方式来使用OSS，当启动了`ossftp`后，就能用`FileZilla客户端`操作OSS
+      ，也可以在jenkins中安装相关FTP插件实现将构建后的项目目录自动上传到OSS
+
+## 阿里云OSS官方资源
   - [对象存储OSS](https://www.aliyun.com/product/oss/?spm=5176.8142029.418687.8.6BcYhs)
   - [OSS常用工具汇总](https://help.aliyun.com/document_detail/44075.html?spm=5176.product31815.3.1.3ZGONV)
   - [ossftp项目主页（GitHub）](https://github.com/aliyun/oss-ftp)
@@ -134,6 +140,7 @@
 [getSecret]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/get_secret.png
 [accessOssClientTool]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/access_oss_client_tool.png
 [setOssClientPwd]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_oss_client_pwd.png
+[sccessLoginOssClent]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_oss_client_pwd.png
 [downLoadOssftp]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/down_load_ossftp.png
 [succesStartOssftp]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/succes_start_ossftp.png
 [succesStartOssftp2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/succes_start_ossftp2.png
