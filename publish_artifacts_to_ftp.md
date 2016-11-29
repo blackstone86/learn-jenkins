@@ -34,11 +34,18 @@
 
   - 查看构建日志
 
+    ![][uploadLog]
     
+    > 根据日志显示已成功上传80个文件（png图）到`pkgs/development/latest/2016-11-29_17-34-34`目录，由于我们在jenkins系统配置页设置了FTP根目录为`/learnJenkins`，
+      因此到OSS上查看`/learnJenkins/pkgs/development/latest/2016-11-29_17-34-34`目录下是否已经存在80张图片
 
+  - 查看`FileZilla`是否存在`/learnJenkins/pkgs/development/latest/2016-11-29_17-34-34`是否有80张图
     
+    ![][checkUpload]
 
 [selectPublishArtifactsToFtp]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/select_publish_artifacts_to_ftp.png
 [configFtpRepositoryHosts]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_ftp_repository_hosts.png
 [addUploadConfig]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/add_upload_config.png
 [setFileUpload]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/set_file_upload.png
+[uploadLog]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/upload_log.png
+[checkUpload]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/check_upload.png
