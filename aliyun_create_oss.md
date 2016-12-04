@@ -146,4 +146,4 @@
 [succesStartOssftp2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/succes_start_ossftp2.png
 [downloadFilezilla]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/download_filezilla.png
 [loginOssftpByFilezilla]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/login_ossftp_by_filezilla.png
-[successLoginOssftpByFilezilla]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_login_ossftp_by_filezilla.png
+[successLoginOssftpByFilezilla]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/success_login_ossftp_by_filezilla.png 
