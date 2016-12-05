@@ -36,7 +36,7 @@
 
     上一次触发构建的提交的完整SHA散列码
 
-    输入例子：`bf29c6ae90539721a0d8c601ef98300362a04a5d`
+    输出例子：`bf29c6ae90539721a0d8c601ef98300362a04a5d`
 
   - $GIT_PREVIOUS_SUCCESSFUL_COMMIT
 
