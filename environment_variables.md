@@ -71,7 +71,7 @@
 
       ![][configGitPlugin2]
 
-    > 提示，如果两种方式都有设置，则以`配置方式二`的为准
+    > 提示，如果两种方式都有设置，则以`配置方式二`的为准 
 
 [configGitPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin.png    
 [configGitPlugin2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_2.png    
