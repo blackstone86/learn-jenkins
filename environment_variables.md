@@ -25,6 +25,10 @@
       ![][configGitPluginBranch]
 
       设置为空字符串，或者`**`，都会显示`origin/master`
+  
+  - $GIT_LOCAL_BRANCH
+    
+    本地分支名
 
   - $GIT_PREVIOUS_COMMIT
 
