@@ -17,18 +17,20 @@
     远程仓库名称（默认`origin`)，紧跟当前分支名称
 
     输出例子：`origin/master`
-
-    > 提示：需要在作业配置页设置
-      
-      ![][configGitPluginBranch]
-
-      ![][configGitPluginBranch]
-
-      设置为空字符串，或者`**`，都会显示`origin/master`
   
   - $GIT_LOCAL_BRANCH
     
     本地分支名
+
+    输出例子：`master`
+
+    > 提示：需要在作业配置页设置
+      
+    ![][configGitPluginBranch]
+
+    ![][configGitPluginBranch2]
+
+    设置为空字符串，或者`**`，都会显示`origin/master`    
 
   - $GIT_PREVIOUS_COMMIT
 
@@ -74,3 +76,4 @@
 [configGitPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin.png    
 [configGitPlugin2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_2.png    
 [configGitPluginBranch]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_branch.png    
+[configGitPluginBranch2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_branch2.png    
