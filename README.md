@@ -20,7 +20,7 @@
     - [添加SSH钥匙到GitHub账户](https://github.com/blackstone86/learn-jenkins/blob/master/github_ssh_key_add.md)
   - 阿里云相关
     - [阿里云OSS开通和使用](https://github.com/blackstone86/learn-jenkins/blob/master/aliyun_create_oss.md)
-  - [系统内置方法](https://github.com/blackstone86/learn-jenkins/blob/master/sys_function.md)
+  - [操作系统内置方法](https://github.com/blackstone86/learn-jenkins/blob/master/sys_function.md)
 
 ## License
 
