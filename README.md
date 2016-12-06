@@ -4,6 +4,7 @@
 
 ## 入门
   - [搭建jenkins环境](https://github.com/blackstone86/learn-jenkins/blob/master/install_jenkins.md)
+  - [环境变量](https://github.com/blackstone86/learn-jenkins/blob/master/environment_variables.md)
 
 ## 进阶
   - [GitHub仓库push后自动触发构建](https://github.com/blackstone86/learn-jenkins/blob/master/ci_by_webhook.md)
