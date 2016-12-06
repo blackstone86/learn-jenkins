@@ -39,9 +39,11 @@
 
   - $EXECUTOR_NUMBER
 
-    执行数量
+    作业执行者（理解成执行作业的线程）的唯一数字标识，该标识基于1
 
     输出例子：`1`
+
+    > 提示：常规来讲，不同作业会对应不同的`EXECUTOR_NUMBER`，但是当多作业并行执行的时候，这些作业的`EXECUTOR_NUMBER`就有可能是相同的
 
   - $NODE_NAME
 
@@ -89,19 +91,26 @@
 - `Git Plugin` 环境变量
   - $GIT_COMMIT
     
-    当前提交的完整SHA散列码
+    当前提交的散列码
 
     输出例子：`02159eb63d503d562b83c2326fd4e531a6d75a0d`
 
-    > 提示：如果本地提交多次，然后再push到远程仓库，那么`$GIT_COMMIT`显示最近一次提交的SHA散列码
+    > 提示：如果本地提交多次，然后再push到远程仓库，那么`$GIT_COMMIT`显示最近一次提交的散列码
 
   - $GIT_BRANCH
     
-    远程仓库名称（默认`origin`)，拼接当前提交所在分支的分支名称
+    远程仓库名称（默认`origin`)，拼接触发构建的提交所在分支的分支名称
 
     输出例子：`origin/master`
 
-    > 提示：假如我提交到`master`分支，那么`$GIT_BRANCH`的值为`origin/master`
+    > 提示：假如我提交到`master`分支，那么`$GIT_BRANCH`的值为`origin/master`，但是必须保证你的提交所在的分支能触发构建，假如我设置多条分支都能触发构建，
+      那么`$GIT_BRANCH`能用于反映出究竟是哪条分支触发构建的。
+    
+    如何设置和查看作业的构建分支？
+    
+    > 答：在作业的配置页，源码管理->Git->Branches to build区域查看或设置，下图表示master分支的提交会触发构建
+
+    ![][branchsToBuild]
   
   - $GIT_LOCAL_BRANCH
     
@@ -168,14 +177,16 @@
   > 提示：$GIT_AUTHOR_NAME，$GIT_COMMITTER_NAME，$GIT_AUTHOR_EMAIL，$GIT_COMMITTER_EMAIL这些变量都来源于配置
     
   - 配置方式一：系统配置页设置
-      
+
     ![][configGitPlugin]
 
   - 配置方式二：作业配置页设置
 
     ![][configGitPlugin2]
 
-  如果两种方式都有设置，则以`配置方式二`的为准 
+    ![][jobUserNameEmail]
+
+  如果两种方式都有设置，则以`配置方式二`的为准
 
 [configGitPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin.png    
 [configGitPlugin2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_2.png    
@@ -183,3 +194,5 @@
 [configGitPluginBranch2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_branch2.png   
 [jimvinAppSource]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/jimvin_app_source.png   
 [checkJimvinAppBranch]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/check_jimvin_app_branch.png   
+[branchsToBuild]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/branchs_to_build.png   
+[jobUserNameEmail]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/job_username_email.png   
