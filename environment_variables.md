@@ -86,7 +86,7 @@
     输出例子：`http://c4d3fe77.ngrok.io/job/jimvin-app/`
 
 ## 插件环境变量
-- Git Plugin 环境变量
+- `Git Plugin` 环境变量
   - $GIT_COMMIT
     
     当前提交的完整SHA散列码
@@ -165,16 +165,17 @@
 
     输出例子：`jimvin@hudongpai.com`
 
-  > 提示：$GIT_AUTHOR_NAME，$GIT_COMMITTER_NAME，$GIT_AUTHOR_EMAIL，$GIT_COMMITTER_EMAIL这些变量都来源于配置，
-    - 配置方式一：系统配置页设置
+  > 提示：$GIT_AUTHOR_NAME，$GIT_COMMITTER_NAME，$GIT_AUTHOR_EMAIL，$GIT_COMMITTER_EMAIL这些变量都来源于配置
+    
+  - 配置方式一：系统配置页设置
       
-      ![][configGitPlugin]
+    ![][configGitPlugin]
 
-    - 配置方式二：作业配置页设置
+  - 配置方式二：作业配置页设置
 
-      ![][configGitPlugin2]
+    ![][configGitPlugin2]
 
-    > 提示，如果两种方式都有设置，则以`配置方式二`的为准 
+  如果两种方式都有设置，则以`配置方式二`的为准 
 
 [configGitPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin.png    
 [configGitPlugin2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_2.png    
