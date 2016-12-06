@@ -14,9 +14,11 @@
 
   - $GIT_BRANCH
     
-    远程仓库名称（默认`origin`)，紧跟当前分支名称
+    远程仓库名称（默认`origin`)，拼接当前提交所在分支的分支名称
 
     输出例子：`origin/master`
+
+    > 提示：假如我提交到`master`分支，那么`$GIT_BRANCH`的值为`origin/master`
   
   - $GIT_LOCAL_BRANCH
     
@@ -51,13 +53,13 @@
 
   - $GIT_PREVIOUS_COMMIT
 
-    上一次触发构建的提交的完整SHA散列码
+    上一次触发构建的提交的散列码
 
     输出例子：`bf29c6ae90539721a0d8c601ef98300362a04a5d`
 
   - $GIT_PREVIOUS_SUCCESSFUL_COMMIT
 
-    上一次成功提交的完整SHA散列码
+    上一次触发构建并构建成功的提交的散列码
 
     输出例子：`bf29c6ae90539721a0d8c601ef98300362a04a5d`
 
