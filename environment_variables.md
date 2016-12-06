@@ -76,4 +76,4 @@
 [configGitPlugin]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin.png    
 [configGitPlugin2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_2.png    
 [configGitPluginBranch]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_branch.png    
-[configGitPluginBranch2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_branch2.png    
+[configGitPluginBranch2]: https://raw.githubusercontent.com/blackstone86/learn-jenkins/master/assets/config_git_plugin_branch2.png   
