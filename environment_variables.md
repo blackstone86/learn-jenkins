@@ -1,7 +1,90 @@
 # 环境变量
 
 ## jenkins环境变量
+  - $BUILD_NUMBER
+    
+    构建序号
+
+    输出例子：`102`
+
+  - $BUILD_ID
+    
+    构建ID
+
+    输出例子：`102`
   
+  - $BUILD_DISPLAY_NAME
+
+    构建名称
+
+    输出例子：`#102`
+
+  - $JOB_NAME
+
+    作业名称
+
+    输出例子：`jimvin-app`
+
+  - $JOB_BASE_NAME
+
+    作业名称
+
+    输出例子：`jimvin-app`
+
+  - $BUILD_TAG
+
+    构建标签，格式"jenkins-${JOB_NAME}-${BUILD_NUMBER}"
+
+    输出例子：`jenkins-jimvin-app-102`
+
+  - $EXECUTOR_NUMBER
+
+    执行数量
+
+    输出例子：`1`
+
+  - $NODE_NAME
+
+    节点名称
+
+    输出例子：`master`
+
+  - $NODE_LABELS
+
+    节点标识
+
+    输出例子：`master`
+
+  - $WORKSPACE
+
+    工作区目录路径
+
+    输出例子：`/Users/Shared/Jenkins/Home/workspace/jimvin-app`
+
+  - $JENKINS_HOME
+
+    jenkins的Home目录路径
+
+    输出例子：`/Users/Shared/Jenkins/Home`
+
+  - $JENKINS_URL
+
+    jenkins的URL
+
+    输出例子：`http://c4d3fe77.ngrok.io/`
+
+  - $BUILD_URL
+
+    构建的URL
+
+    输出例子：`http://c4d3fe77.ngrok.io/job/jimvin-app/102/`
+
+  - $JOB_URL
+
+    作业的URL
+
+    输出例子：`http://c4d3fe77.ngrok.io/job/jimvin-app/`
+
 ## 插件环境变量
 - Git Plugin 环境变量
   - $GIT_COMMIT
@@ -43,6 +126,7 @@
     验证是否检出`sandbox`分支，打开终端，输入以下代码
 
     ```shell
+    # 定位到作业工作区（workspace）
     cd /Users/Shared/Jenkins/Home/workspace/jimvin-app
     git branch
     ```
