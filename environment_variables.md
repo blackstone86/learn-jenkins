@@ -59,7 +59,7 @@
 
   - $WORKSPACE
 
-    工作区目录路径
+    作业的工作区目录路径
 
     输出例子：`/Users/Shared/Jenkins/Home/workspace/jimvin-app`
 
