@@ -1,44 +1,5 @@
 #!/bin/sh
 
-# 等价写法
-# if [ true ]; then
-# if [ false ]; then
-# if [ abc ]; then
-# if [ abc = abc ]; then
-# if [ $abc = $abc ]; then
-# if true; then
-if true; then
-    ls
-else
-    echo "true is false."
-fi
-
-# 等价写法
-# if false; then
-# if [ ]; then
-# if [ $a ]; then
-# if [ $a = $a1 ]; then
-# if [ a = a1 ]; then
-if false; then
-    echo "false"
-fi
-
-FIRST_ARGUMENT="Silly"
-# 等价写法：
-# if [ "$FIRST_ARGUMENT" = "Silly" ] ; then
-# if [ $FIRST_ARGUMENT = "Silly" ] ; then
-# if [ $FIRST_ARGUMENT = Silly ] ; then
-if [ "$FIRST_ARGUMENT" = "Silly" ] ; then
-    echo "Silly human, scripts are for kiddies."
-else
-    echo "Hello, world $FIRST_ARGUMENT!"
-fi
-
-# 验证没定义的变量
-if [ x$VARIABLE = x ] ; then
-    echo "Empty variable \$VARIABLE"
-fi
-
 ############################################################
 #  文件测试运算符 (共13个)
 #  -d 判断目录是否存在
@@ -361,7 +322,65 @@ else
     echo '1不等于2: false'
 fi
 
+############################################################
+#  技巧类
+#  验证变量是否没有定义
+#  验证变量是否已经定义
+#  等价true的表达式
+#  等价false的表达式
+#  字符串是否相等判定与双引号无关，但变量不能用单引号
+############################################################
 
+# 验证变量是否没有定义
+if [ x$VARIABLE = x ] ; then
+    echo "\$VARIABLE 没有定义"
+else
+    echo "\$VARIABLE 已经定义"
+fi
+
+# 验证变量是否已经定义
+if [ $VARIABLE ] ; then
+    echo "\$VARIABLE 已经定义"
+else
+    echo "\$VARIABLE 没有定义"
+fi
+
+# 等价true的表达式
+# if [ true ]; then         # 按字符串"true"处理
+# if [ false ]; then        # 按字符串"false"处理
+# if [ abc ]; then          # 按字符串"abc"处理
+# if [ abc = abc ]; then    # 按两个字符串比较处理
+# if [ $abc = $abc ]; then  # 按两个没有定义的变量比较处理
+# if true; then             # 按布尔值处理
+if true; then
+    echo "true is true"
+else
+    echo "true is false."
+fi
+
+# 等价false的表达式
+# if [ ]; then             # 按没有定义变量处理 falsy值
+# if [ $a ]; then          # 按没有定义变量处理 falsy值
+# if false; then           # 按布尔值处理 falsy值
+# if [ a = a1 ]; then      # 按两个字符串比较处理
+if false; then
+    echo "false is true"
+else 
+    echo "false is false"
+fi
+
+# 字符串是否相等判定与双引号无关，但变量不能用单引号，如 if [ '$FIRST_ARGUMENT' = Silly ] ; then
+# 等价写法：
+# if [ "$FIRST_ARGUMENT" = "Silly" ] ; then
+# if [ "$FIRST_ARGUMENT" = Silly ] ; then
+# if [ $FIRST_ARGUMENT = "Silly" ] ; then
+# if [ $FIRST_ARGUMENT = Silly ] ; then
+FIRST_ARGUMENT="Silly"
+if [ $FIRST_ARGUMENT = 'Silly' ] ; then
+    echo "$FIRST_ARGUMENT 等于 Silly"
+else
+    echo "$FIRST_ARGUMENT 不等于 Silly"
+fi
 
 
 
