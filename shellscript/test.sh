@@ -40,7 +40,7 @@ if [ x$VARIABLE = x ] ; then
 fi
 
 ############################################################
-#  文件测试运算符
+#  文件测试运算符 共13个
 #  -d 判断目录是否存在
 #  -e 判断文件或目录是否存在
 #  -r 判断文件是否可读
@@ -50,10 +50,16 @@ fi
 #  -u 判断可执行文件是否设置为suid访问模式
 #  -g 判断可执行文件是否设置为sgid访问模式
 #  -k 判断是否设置了Sticky Bit
-# todo: -c -b -p -x
+#  -x 判断是否可执行
+#  -b 判断是否为模块特殊设备
+#  -c 判断是否为字符特殊设备
+#  -p 判断是否具名管道
 ############################################################
 directory=/Users/jimvin/
 file=/Users/jimvin/test.sh
+blockdevice=/dev/disk1
+characterdevice=/dev/cu.Bluetooth-Incoming-Port
+pipefile=/Users/jimvin/pipefile
 
 # 判断目录是否存在
 # 如果是文件，即使该文件存在，也会返回false
@@ -82,13 +88,6 @@ if [ -w $file ]; then
     echo "$file 可写"
 else
     echo "$file 不可写"    
-fi
-
-# 判断文件是否可执行
-if [ -x $file ]; then
-    echo "$file 可执行"
-else
-    echo "$file 不可执行"    
 fi
 
 # 判断文件是否为空
@@ -137,6 +136,44 @@ if [ -k $file ]; then
     echo "$file 设置了Sticky Bit"
 else
     echo "$file 没有设置Sticky Bit"     
+fi
+
+# 判断是否可执行
+# 设置文件可执行 chmod +x filename 逆操作 chmod -x filename 
+if [ -x $file ]; then
+    echo "$file 为可执行文件"
+else
+    echo "$file 为非可执行文件"     
+fi
+
+# 判断是否为模块特殊设备
+# 显示模块设备命令 df 或 diskutil list
+# 本机模块设备: /dev/disk1; devfs; map -hosts; map auto_home，但容量大于0才认为是模块设备
+if [ -b $blockdevice ]; then
+    echo "$blockdevice 为模块特殊设备"
+else
+    echo "$blockdevice 为非模块特殊设备"     
+fi
+
+# 判断是否为字符特殊设备 打印机(printers)、终端(terminals)、调制解调器（modems)
+# 查找字符设备方法
+# 参考 http://www.infoq.com/cn/articles/linux-kernel-module-part02
+# cd /dev
+# ls -l ("crw-rw-rw-" c开头表示字符设备, "brw-r-----" b开头表示模块设备, "drwxr-xr-x" d开头表示目录)
+if [ -c $characterdevice ]; then
+    echo "$characterdevice 为字符特殊设备"
+else
+    echo "$characterdevice 为非字符特殊设备"     
+fi
+
+# 判断是否管道文件
+# 参考 https://books.google.com.hk/books?id=o9K8KEQic5sC&pg=PA101&lpg=PA101&dq=character+devices+in+mac&source=bl&ots=lXUU35a6lF&sig=TPs_gKSqnTzdM-F4XaF_qlywlyE&hl=zh-CN&sa=X&ved=0ahUKEwjF4LH31pHRAhUCpZQKHfS3CdEQ6AEIQzAF#v=onepage&q=character%20devices%20in%20mac&f=false
+# mkfifo pipefile 当前目录创建管道文件
+# ls -l ("prw-r--r--" p开头表示管道文件)
+if [ -p $pipefile ]; then
+    echo "$pipefile 为管道文件"
+else
+    echo "$pipefile 为非管道文件"    
 fi
 
 ############################################################
