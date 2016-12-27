@@ -1,6 +1,34 @@
 #!/bin/sh
 
 ############################################################
+#  变量 (共3个)
+#  定义变量
+#  只读变量
+#  删除变量
+############################################################
+
+# 定义变量 
+language="java"
+echo $language;         # java
+echo ${language}Script; # javaScript
+
+# 只读变量
+birthday="1986/04/06"
+readonly birthday
+# 不能对只读变量赋值，如 birthday="birthday"，否则报错"birthday: readonly variable"
+# 不能unset只读变量，如 unset birthday，否则报错"unset: birthday: cannot unset: readonly variable"
+
+# 删除变量
+# 等价写法：
+# unset language
+# language=''
+# language=""
+# language=" "
+# language=
+unset language
+echo $language; # 输出空字符串
+
+############################################################
 #  文件测试运算符 (共13个)
 #  -d 判断目录是否存在
 #  -e 判断文件或目录是否存在
