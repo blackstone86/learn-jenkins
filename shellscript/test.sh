@@ -40,7 +40,7 @@ if [ x$VARIABLE = x ] ; then
 fi
 
 ############################################################
-#  文件测试运算符 共13个
+#  文件测试运算符 (共13个)
 #  -d 判断目录是否存在
 #  -e 判断文件或目录是否存在
 #  -r 判断文件是否可读
@@ -177,7 +177,7 @@ else
 fi
 
 ############################################################
-#  字符串运算符
+#  字符串运算符 (共5个)
 #  =   判断是否相等
 #  !=  判断是否不相等
 #  -n  判断字符串是否非空
@@ -229,5 +229,35 @@ if [ -z $var ]; then
 	echo "空字符串"
 else
     echo "字符串"
+fi
+
+############################################################
+#  布尔运算符 (共3个)
+#  !   非运算
+#  -o  或运算
+#  -a  与运算
+############################################################
+a=1
+b=0
+
+# 非运算
+if [ ! $a -gt $b ]; then
+	echo "!true return : true"
+else
+    echo "!true return : false"
+fi
+
+# 或运算
+if [ $a -gt $b -o $a -lt $b ]; then
+	echo "true or false return : true"
+else
+    echo "true or false return : false"
+fi
+
+# 与运算
+if [ $a -gt $b -a $a -lt $b ]; then
+	echo "true and false return : true"
+else
+    echo "true and false return : false"
 fi
 
