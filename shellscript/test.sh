@@ -10,7 +10,20 @@
 # 定义变量 
 language="java"
 echo $language;         # java
-echo ${language}Script; # javaScript
+# 如果变量后紧跟字符串，则变量必须加上{}
+echo ${language}Script; # javaScript 
+number=11
+echo ${number}-1-2009;  # 11-1-2009
+echo $number-1-2009;    # 11-1-2009
+echo `date`             # 2016年12月27日 星期二 16时38分56秒 CST
+date=$(date) 
+echo $date              # 2016年12月27日 星期二 16时38分56秒 CST
+date=$(date +'%Y%m%d%H%M') 
+echo $date              # 201612271644
+date=$(date +'%Y/%m/%d %H:%M:%S') 
+echo $date              # 2016/12/27 18:19:59
+date=$(date +"%s")
+echo $date              # 1482834110
 
 # 只读变量
 birthday="1986/04/06"
@@ -27,6 +40,37 @@ readonly birthday
 # language=
 unset language
 echo $language; # 输出空字符串
+
+############################################################
+#  echo 用法 (共5个)
+#  同一行显示
+#  换行显示
+#  隔行显示
+#  原样输出
+#  转义输出
+############################################################
+
+# 同一行显示
+echo "OK!\c"
+echo "it's a test!" # OK!it's a test!
+
+# 换行显示
+echo "OK!"
+echo "it's a test!" # OK!
+                    # it's a test!
+
+# 隔行显示
+echo "OK!\n"
+echo "it's a test!" # OK!
+                    # 
+                    # it's a test!
+
+# 原样输出
+name=jimvin
+echo '$name\"' # $name\"
+
+# 转义输出
+echo "\"$name\" is a guy" # "jimvin" is a guy
 
 ############################################################
 #  文件测试运算符 (共13个)
