@@ -237,27 +237,84 @@ fi
 #  -o  或运算
 #  -a  与运算
 ############################################################
-a=1
-b=0
+one=1
+zero=0
 
 # 非运算
-if [ ! $a -gt $b ]; then
+if [ ! $one -gt $zero ]; then
 	echo "!true return : true"
 else
     echo "!true return : false"
 fi
 
 # 或运算
-if [ $a -gt $b -o $a -lt $b ]; then
+if [ $one -gt $zero -o $one -lt $zero ]; then
 	echo "true or false return : true"
 else
     echo "true or false return : false"
 fi
 
 # 与运算
-if [ $a -gt $b -a $a -lt $b ]; then
+if [ $one -gt $zero -a $one -lt $zero ]; then
 	echo "true and false return : true"
 else
     echo "true and false return : false"
 fi
+
+############################################################
+#  关系运算符列表 (共6个)
+#  -eq	是否等于
+#  -ne	是否不等于
+#  -gt	是否大于
+#  -lt	是否小于
+#  -ge	是否大于等于
+#  -le	是否小于等于
+############################################################
+
+# 是否等于
+if [ $one -eq $zero ]; then
+	echo "1是否等于0 : true"
+else
+    echo "1是否等于0 : false"
+fi
+
+# 是否不等于
+if [ $one -ne $zero ]; then
+	echo "1是否不等于0 : true"
+else
+    echo "1是否不等于0 : false"
+fi
+
+# 是否大于
+if [ $one -gt $zero ]; then
+	echo "1是否大于0 : true"
+else
+    echo "1是否大于0 : false"
+fi
+
+# 是否小于
+if [ $one -lt $zero ]; then
+	echo "1是否小于0 : true"
+else
+    echo "1是否小于0 : false"
+fi
+
+# 是否大于等于
+if [ $one -ge $zero ]; then
+	echo "1是否大于等于0 : true"
+else
+    echo "1是否大于等于0 : false"
+fi
+
+# 是否小于等于
+if [ $one -le $zero ]; then
+	echo "1是否小于等于0 : true"
+else
+    echo "1是否小于等于0 : false"
+fi
+
+
+
+
+
 
